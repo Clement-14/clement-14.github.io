@@ -2,21 +2,35 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Compteur de Mots</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4141326589139318" crossorigin="anonymous"></script>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      background: #f4f4f4;
       padding: 20px;
+      margin: 0;
     }
     .container {
       max-width: 600px;
       margin: auto;
-      background: #fff;
+      background: white;
       padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    nav {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    nav a {
+      color: #0077cc;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     textarea {
       width: 100%;
@@ -26,16 +40,23 @@
       border-radius: 5px;
       border: 1px solid #ccc;
       resize: vertical;
+      margin-top: 10px;
     }
     .result {
       margin-top: 15px;
       font-size: 18px;
       font-weight: bold;
+      color: #333;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <nav>
+      <a href="index.html">🏠 Accueil</a> |
+      <a href="privacy.html">🔒 Confidentialité</a>
+    </nav>
+
     <h1>📝 Compteur de Mots</h1>
     <p>Colle ton texte ci-dessous :</p>
     <textarea id="textInput" placeholder="Écris ici..."></textarea>
