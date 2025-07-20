@@ -2,51 +2,111 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Outils en Ligne</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background: #eef2f3;
+      margin: 0;
       padding: 20px;
+      color: #333;
+      line-height: 1.6;
     }
     .container {
-      max-width: 600px;
+      max-width: 700px;
       margin: auto;
       background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     h1 {
       text-align: center;
-      color: #333;
+      color: #0077cc;
+      margin-bottom: 15px;
+    }
+    p.message {
+      background: #d9f0ff;
+      border-left: 6px solid #0077cc;
+      padding: 18px 20px;
+      font-size: 18px;
+      border-radius: 6px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #005fa3;
+      border-bottom: 2px solid #0077cc;
+      padding-bottom: 5px;
+      margin-top: 40px;
+      margin-bottom: 20px;
     }
     ul {
       list-style: none;
-      padding: 0;
+      padding-left: 0;
     }
     li {
-      margin: 10px 0;
+      margin-bottom: 12px;
       font-size: 18px;
     }
     a {
       color: #0077cc;
       text-decoration: none;
+      transition: color 0.2s ease;
     }
-    a:hover {
+    a:hover, a:focus {
       text-decoration: underline;
+      color: #005fa3;
+      outline: none;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 50px;
+      user-select: none;
+    }
+    @media (max-width: 480px) {
+      .container {
+        padding: 20px 15px;
+      }
+      p.message {
+        font-size: 16px;
+        padding: 15px;
+      }
+      li {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>📚 Outils en Ligne</h1>
+
+    <p class="message">
+      Bienvenue sur notre site d’outils gratuits en ligne, conçus pour simplifier vos tâches quotidiennes.  
+      Explorez nos outils pratiques et retrouvez toutes les informations importantes dans la section dédiée.
+    </p>
+
+    <h2>Outils en ligne</h2>
     <ul>
       <li><a href="compteur-de-mots.html">📝 Compteur de mots et de caractères</a></li>
       <li><a href="password.html">🔐 Générateur de mot de passe</a></li>
       <li><a href="case-converter.html">🔤 Convertisseur de casse</a></li>
     </ul>
+
+    <h2>Informations</h2>
+    <ul>
+      <li><a href="about.html">ℹ️ À propos</a></li>
+      <li><a href="contact.html">📩 Contact</a></li>
+      <li><a href="privacy.html">🔒 Politique de confidentialité</a></li>
+    </ul>
+
   </div>
+
+  <footer>
+    &copy; 2025 Clément - Tous droits réservés
+  </footer>
 </body>
 </html>
