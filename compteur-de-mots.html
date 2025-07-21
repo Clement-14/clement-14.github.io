@@ -3,10 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Compteur de Mots</title>
-  <p>Bienvenue sur notre outil gratuit de compteur de mots et de caractères. Cet outil vous permet d'évaluer la longueur de vos textes facilement. C’est particulièrement utile pour les rédacteurs, les étudiants, ou toute personne qui doit respecter une limite de mots.</p>
-
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4141326589139318" crossorigin="anonymous"></script>
+  <title>Compteur de Mots - Outil Gratuit</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,7 +12,7 @@
       margin: 0;
     }
     .container {
-      max-width: 600px;
+      max-width: 700px;
       margin: auto;
       background: white;
       padding: 30px;
@@ -50,17 +47,36 @@
       font-weight: bold;
       color: #333;
     }
+    .explanation {
+      margin-bottom: 20px;
+      background-color: #eef5ff;
+      padding: 15px;
+      border-left: 4px solid #0077cc;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <nav>
       <a href="index.html">🏠 Accueil</a> |
+      <a href="about.html">ℹ️ À propos</a> |
+      <a href="contact.html">📩 Contact</a> |
       <a href="privacy.html">🔒 Confidentialité</a>
     </nav>
 
     <h1>📝 Compteur de Mots</h1>
-    <p>Colle ton texte ci-dessous :</p>
+
+    <div class="explanation">
+      <p>Bienvenue sur notre outil gratuit de compteur de mots et de caractères. Cet outil vous permet de connaître en temps réel la longueur de vos textes. C’est particulièrement utile pour :</p>
+      <ul>
+        <li>Les étudiants et enseignants</li>
+        <li>Les rédacteurs web et blogueurs</li>
+        <li>Les professionnels du marketing ou du SEO</li>
+      </ul>
+      <p>Collez votre texte ci-dessous pour analyser sa longueur.</p>
+    </div>
+
     <textarea id="textInput" placeholder="Écris ici..."></textarea>
     <div class="result" id="result">Mots : 0 | Caractères : 0</div>
   </div>
